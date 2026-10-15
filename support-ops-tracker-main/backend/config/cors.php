@@ -7,14 +7,14 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'https://support-ops-tracker.vercel.app',
-        'https://support-ops-tracker.vercel.app',
         'http://localhost:5173',
         'http://127.0.0.1:5173',
+        'https://https://pms-tracker-neon.vercel.app',
     ],
 
     'allowed_origins_patterns' => [
         '#^http://(localhost|127\.0\.0\.1)(:\d+)?$#',
+        '#^https://([a-z0-9-]+\.)*vercel\.app$#i',
     ],
 
     'allowed_headers' => ['*'],
